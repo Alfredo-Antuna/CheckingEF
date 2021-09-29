@@ -17,8 +17,8 @@ namespace myAp
             // var withTransaction = new Transaction{Amount = 50,TransactionType = "withdraw"};
             // var overdraftTransaction = new Transaction{Amount = 75,TransactionType = "overdraft fee"};
             // var secondDeposit = new Transaction{Amount = 300,TransactionType = "deposit"};
-            mycontext.Add(depositTransaction);
-            // myAcct.Transactions.Add(depositTransaction);
+            // mycontext.Add(depositTransaction);
+            myAcct.Transactions.Add(depositTransaction);
             mycontext.SaveChanges();
             // myAcct.Transactions.Add(withTransaction);
             // myAcct.Balance -= 50;
