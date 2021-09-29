@@ -8,8 +8,8 @@ namespace lib
      public class Context : DbContext
   {
    
-    public DbSet<transaction> Transactions { get; set;}
-    public DbSet<account> Accounts {get; set;}
+    public DbSet<Transaction> Transactions { get; set;}
+    public DbSet<Account> Accounts {get; set;}
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
       var basedir = System.AppContext.BaseDirectory;

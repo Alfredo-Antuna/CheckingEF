@@ -1,11 +1,9 @@
 namespace lib
 {
-    public class transaction{
-        private int _id {get; set;}
-        private int _diff {get; set;}
-        private string _transactionType {get; set;}//enum?
-        private int _accountID {get; set;}
-
-
+    public class Transaction{
+        public string TransactionType {get; set;}//enum?
+        public int Id {get; set;}
+        public int Amount {get; set;}
+        public Account Account {get; set;}
     }
 }
